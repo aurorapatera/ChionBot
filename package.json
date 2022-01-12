@@ -1,0 +1,23 @@
+{
+	"name": "chionbot",
+	"version": "1.0.0",
+	"description": "A friendly Discord Bot for the Down by the River community.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aurorapatera/ChionBot.git"
+	},
+	"author": "Aurora Patera",
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/aurorapatera/ChionBot/issues"
+	},
+	"homepage": "https://github.com/aurorapatera/ChionBot",
+	"dependencies": {
+		"discord.js": "^13.5.1"
+	}
+}
