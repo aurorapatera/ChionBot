@@ -18,7 +18,7 @@ client.on('messageCreate', (message) => {
 
   smutWord.forEach((word) => {
     if (message.content.includes(word)) {
-      message.reply(':pit:831859849343401998');
+      message.reply(:pit:831859849343401998);
     }
   });
 });
