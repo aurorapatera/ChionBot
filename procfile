@@ -1,1 +1,1 @@
-worker: node chionbot.js
+worker: node index.js
