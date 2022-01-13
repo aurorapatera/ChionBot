@@ -9,10 +9,8 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-const smutWord = ["buttplug", "dildo", "titties", "titty", "pit", "porn", "dong",
-    "hand holding", "peen", "boob", "dick", "salami", "wizard tower",
-    "Biggus Dickus", "bite me", "eggplant", "peepee", "sword of the frontier",
-    "vlaakith", "shar preserve me", "horny", "Haedir"]
+var smutWordList = require('./smutwords.json');
+const smutWord = JSON.parse(smutWordList)
 client.on('messageCreate', (message) => {
   if (message.author.bot) return false;
 
