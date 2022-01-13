@@ -1,6 +1,9 @@
 {
 	"name": "chionbot",
 	"version": "1.0.0",
+	"engines": {
+    "node": "16.x"
+  }, 
 	"description": "A friendly Discord Bot for the Down by the River community.",
 	"main": "index.js",
 	"scripts": {
