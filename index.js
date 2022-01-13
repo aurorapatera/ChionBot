@@ -6,7 +6,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 // When the client is ready, run this code (only once)
 client.once('ready', () => {
-	console.log('Ready!');
+	console.log('I am awake, mother!');
 });
 
 const smutWord = ["buttplug", "dildo", "titties", "titty", "pit", "porn", "dong",
