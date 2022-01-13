@@ -10,7 +10,7 @@ client.once('ready', () => {
 });
 
 var smutWordList = require('./smutwords.json');
-const smutWord = JSON.parse(smutWordList);
+const smutWord = JSON.parse('smutWordList');
 client.on('messageCreate', (message) => {
   if (message.author.bot) return false;
 
