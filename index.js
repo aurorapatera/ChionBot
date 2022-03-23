@@ -190,14 +190,14 @@ const questions = ["Are there any words or phrases that they overuse?",
 "Do they have any food allergies or sensitivities?",
 ]
 
-//Astarion
-client.on('message', message => {
-  if (message.content === 'qotd') {
-		const QoTD = Math.floor(Math.random() * questions.length);;
-		message.channel.send('QoTD');
+//Command
+const QoTD = Math.floor(Math.random() * questions.length);
+
+client.on('message', function(message) {
+ if (message.content === 'qotd') {
+  message.channel.send('QoTD');
+ }
 });
-
-
 
 // Login to Discord with your client's token
 client.login(process.env.token);
