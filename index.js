@@ -25,7 +25,7 @@ client.on('messageCreate', (message) => {
 
 //Question of the Day
 
-const question = ["Are there any words or phrases that they overuse?",
+const questions = ["Are there any words or phrases that they overuse?",
 "Do they have a catchphrase?",
 "Are they a glass-half-full or a glass-half-empty type of person?",
 "Are they more introverted or extroverted?",
@@ -193,10 +193,8 @@ const question = ["Are there any words or phrases that they overuse?",
 //Astarion
 client.on('message', message => {
   if (message.content === '+qotd') {
-		const guild = client.guilds.cache.get('766962323037749248');
-		const channel = guild.channels.cache.get('766962514407718932');
-		const QoTDAstarion = Math.floor(Math.QoTDAstarion() * question.length);
-		channel.send('QoTDAstarion');  }
+		const QoTD = Math.floor(Math.random() * questions.length);;
+		channel.send('QoTD');  }
 });
 
 
