@@ -202,7 +202,7 @@ let scheduledMessage = new cron.CronJob('30 23 * * *', () => {
 
         // When you want to start it, use:
         scheduledMessage.start()
-
+    ;
 
 
 
