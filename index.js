@@ -192,11 +192,9 @@ const questions = ["Are there any words or phrases that they overuse?",
 
 //Astarion
 client.on('message', message => {
-  if (message.content === '+qotd') {
+  if (message.content === 'qotd') {
 		const QoTD = Math.floor(Math.random() * questions.length);;
-		const guild = client.guilds.cache.get('766962323037749248');
-		const channel = guild.channels.cache.get('766962514407718932');
-		channel.send('QoTD');  }
+		message.channel.send('QoTD');
 });
 
 
