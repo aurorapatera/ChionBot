@@ -24,7 +24,7 @@ client.on('messageCreate', (message) => {
 });
 
 //Question of the Day
-const cron = require('cron');
+
 const question = ["Are there any words or phrases that they overuse?",
 "Do they have a catchphrase?",
 "Are they a glass-half-full or a glass-half-empty type of person?",
@@ -189,6 +189,7 @@ const question = ["Are there any words or phrases that they overuse?",
 "If they could meet anyone, living or dead, who would it be?",
 "Do they have any food allergies or sensitivities?",
 ]
+const cron = require('cron');
 //Astarion
 
 let scheduledMessage = new cron.CronJob('30 23 * * *', () => {
