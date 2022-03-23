@@ -195,7 +195,7 @@ const QoTD = Math.floor(Math.random() * questions.length);
 
 client.on('message', function(message) {
  if (message.content === 'qotd') {
-  message.channel.send('QoTD');
+  message.channel.send(QoTD);
  }
 });
 
