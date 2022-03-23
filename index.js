@@ -191,7 +191,7 @@ const question = ["Are there any words or phrases that they overuse?",
 ]
 
 //Astarion
-const QOTDAcommand = QOTD;
+const QOTDAcommand = "QOTD";
 client.on('messageCreate', (message) => {
   if (message.author.bot) return false;
 
