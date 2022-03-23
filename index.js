@@ -191,18 +191,12 @@ const question = ["Are there any words or phrases that they overuse?",
 ]
 
 //Astarion
-const QOTDAcommand = "QOTD";
-client.on('messageCreate', (message) => {
-  if (message.author.bot) return false;
-
-  QOTDAcommand.forEach((word) => {
-    if (message.content.includes(word)) {
-			const guild = client.guilds.cache.get('766962323037749248');
-			const channel = guild.channels.cache.get('766962514407718932');
-			const QoTDAstarion = Math.floor(Math.QoTDAstarion() * question.length);
-			channel.send('QoTDAstarion');
-    }
-  });
+client.on('message', message => {
+  if (message.content === '+ping') {
+		const guild = client.guilds.cache.get('766962323037749248');
+		const channel = guild.channels.cache.get('766962514407718932');
+		const QoTDAstarion = Math.floor(Math.QoTDAstarion() * question.length);
+		channel.send('QoTDAstarion');  }
 });
 
 
