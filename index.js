@@ -189,21 +189,21 @@ const question = ["Are there any words or phrases that they overuse?",
 "If they could meet anyone, living or dead, who would it be?",
 "Do they have any food allergies or sensitivities?",
 ]
-const cron = require('cron');
+
 //Astarion
+const QOTDAcommand = QOTD;
+client.on('messageCreate', (message) => {
+  if (message.author.bot) return false;
 
-let scheduledMessage = new cron.CronJob('30 23 * * *', () => {
-      // This runs every day at 10:30:00, you can do anything you want
-      // Specifing your guild (server) and your channel
-         const guild = client.guilds.cache.get('766962323037749248');
-         const channel = guild.channels.cache.get('766962514407718932');
-				 const QoTDAstarion = Math.floor(Math.QoTDAstarion() * question.length);
-         channel.send('QoTDAstarion');
-        });
-
-        // When you want to start it, use:
-        scheduledMessage.start()
-    ;
+  QOTDAcommand.forEach((word) => {
+    if (message.content.includes(word)) {
+			const guild = client.guilds.cache.get('766962323037749248');
+			const channel = guild.channels.cache.get('766962514407718932');
+			const QoTDAstarion = Math.floor(Math.QoTDAstarion() * question.length);
+			channel.send('QoTDAstarion');
+    }
+  });
+});
 
 
 
